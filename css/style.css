@@ -28,15 +28,50 @@ body {
 /* Sidebar */
 .sidebar {
   flex-basis: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sidebar-Top */
+.sidebar-top {
+  flex-grow: 1;
   background: grey;
+}
+
+.sidebar-bottom {
+  flex-basis: 50px;
+  background: black;
 }
 
 /* Content */
 .content {
+  position: relative;
   flex-grow: 1;
-  background: yellow;
 }
 
+.content-top-bar {
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: yellow;
+  opacity: .5;
+}
+
+.scrollable {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: violet;
+  overflow-y: auto;
+  padding: 80px 20px 30px;
+}
+
+/* Player */
 .player {
   flex-basis: 90px;
   background: red;
