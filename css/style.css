@@ -22,7 +22,19 @@ body {
 
 .main-window {
   flex-grow: 1;
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  flex-basis: 200px;
   background: grey;
+}
+
+/* Content */
+.content {
+  flex-grow: 1;
+  background: yellow;
 }
 
 .player {
