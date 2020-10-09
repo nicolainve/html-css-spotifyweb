@@ -13,11 +13,6 @@ body {
 
 /* LAYOUT */
 
-.box {
-  background: lightgreen;
-  margin: 10px;
-}
-
 /* UTILITY */
 
 .text-left {
@@ -53,12 +48,16 @@ body {
   flex-basis: 200px;
   display: flex;
   flex-direction: column;
-  background: grey;
+  background: #000;
 }
 
 /* Sidebar-Top */
 .sidebar-top {
   flex-grow: 1;
+}
+
+.sidebar img {
+  width: 50px;
 }
 
 .sidebar-bottom {
@@ -100,14 +99,17 @@ body {
   justify-content: center;
 }
 
-.scrollable .row {
+.scrollable section ul {
   display: flex;
   flex-wrap: wrap;
 }
 
-.row .box {
-  flex-basis: calc(100% / 6 - 20px);
-  height: 400px;
+.scrollable section ul li {
+  flex-basis: calc(100% / 6);
+}
+
+.scrollable section ul li img {
+  width: 100%;
 }
 
 /* Player */
