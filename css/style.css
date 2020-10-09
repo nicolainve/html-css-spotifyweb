@@ -113,10 +113,20 @@ a {
   top: 0;
   left: 0;
   z-index: 1;
-  background: #000;
-  opacity: .5;
-  display: flex;
-  justify-content: flex-end;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+a.btn {
+  text-transform: uppercase;
+  padding: 10px 30px;
+  color: #fff;
+  border-radius: 20px;
+  border: 1px solid;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  background: #06070a;
 }
 
 .scrollable {
@@ -130,9 +140,14 @@ a {
   padding: 80px 20px 30px;
 }
 
-.scrollable .menu-bar {
+.scrollable .menu-bar ul {
   display: flex;
   justify-content: center;
+}
+
+.scrollable .menu-bar ul li {
+  text-transform: uppercase;
+  padding: 0 5px;
 }
 
 .scrollable section ul {
