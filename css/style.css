@@ -106,7 +106,7 @@ body {
 }
 
 .row .box {
-  width: 150px;
+  flex-basis: calc(100% / 6 - 20px);
   height: 400px;
 }
 
