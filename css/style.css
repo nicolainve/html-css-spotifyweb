@@ -7,11 +7,30 @@
 }
 
 body {
-  font-family: sans-serif;
-  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  color: #b3b3b3;
 }
 
 /* LAYOUT */
+
+ul {
+  list-style: none;
+}
+
+/* TYPOGRAPHY */
+
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  color: #fff;
+}
+
+a {
+  color: #b3b3b3;
+  text-decoration: none;
+}
 
 /* UTILITY */
 
@@ -25,6 +44,10 @@ body {
 
 .text-right {
   text-align: right;
+}
+
+.list-inline {
+  display: inline-block;
 }
 
 /* STYLES */
@@ -49,6 +72,16 @@ body {
   display: flex;
   flex-direction: column;
   background: #000;
+  padding: 20px 20px 5px;
+}
+
+.sidebar img {
+  width: 15%;
+  vertical-align: middle;
+}
+
+.sidebar .logo img {
+  width: 70%;
 }
 
 /* Sidebar-Top */
@@ -56,12 +89,15 @@ body {
   flex-grow: 1;
 }
 
-.sidebar img {
-  width: 50px;
-}
-
+/* Sidebar Bottom */
 .sidebar-bottom {
   flex-basis: 50px;
+}
+
+.sidebar-bottom .install i {
+  border: 1px solid;
+  border-radius: 50%;
+  padding: 2px;
 }
 
 /* Content */
@@ -77,7 +113,7 @@ body {
   top: 0;
   left: 0;
   z-index: 1;
-  background: yellow;
+  background: #000;
   opacity: .5;
   display: flex;
   justify-content: flex-end;
@@ -89,7 +125,7 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  background: violet;
+  background: #141921;
   overflow-y: auto;
   padding: 80px 20px 30px;
 }
@@ -105,18 +141,32 @@ body {
 }
 
 .scrollable section ul li {
-  flex-basis: calc(100% / 6);
+  flex-basis: calc(100% / 6 - 10px);
+  margin: 15px 5px;
 }
 
 .scrollable section ul li img {
   width: 100%;
 }
 
+.scrollable .popular-artists img {
+  border-radius: 50%;
+}
+
 /* Player */
 .player {
-  flex-basis: 90px;
-  background: red;
+  padding: 10px;
+  height: 80px;
+  background: #272727;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.player .song img {
+  width: 50px;
+}
+
+.player i {
+  padding: 0 5px;
 }

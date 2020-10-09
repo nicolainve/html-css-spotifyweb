@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>html-css-spotifyweb</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
   <link rel="stylesheet" href="./css/style.css">
 
 </head>
@@ -78,7 +80,7 @@
         </div>
         <div class="sidebar-bottom">
           <div class="install">
-            <img src="" alt="">
+            <i class="fas fa-arrow-down fa-sm"></i>
             <span>Installa app</span>
           </div>
           <div class="profile">
@@ -150,7 +152,7 @@
               </li>
             </ul>
           </section>
-          <section class="most-popular-artists">
+          <section class="popular-artists">
             <h2>Artisti più popolari</h2>
             <ul class="artists-list">
               <li class="artist">
@@ -169,14 +171,36 @@
 
     <!-- Player -->
     <footer class="player">
-      <div class="box">
-        Song
+      <div class="song">
+        <img src="./img/sinister.jpeg" alt="Sinister">
+        <h5 class="list-inline">Sinister</h5>
+        <span>Brano Nome</span>
+        <i class="far fa-heart fa-sm"></i>
+        <i class="far fa-folder fa-sm"></i>
       </div>
-      <div class="box">
-        Controls
+      <div class="controls text-center">
+        <div class="controls-top">
+          <i class="fas fa-random"></i>
+          <i class="fas fa-step-backward"></i>
+          <i class="fas fa-play fa-lg"></i>
+          <i class="fas fa-step-forward"></i>
+          <i class="fas fa-redo-alt"></i>
+        </div>
+        <div class="controls-bottom">
+          <span>0:25</span>
+          <div class="scrolbar-song list-inline">
+
+          </div>
+          <span>4:35</span>
+        </div>
       </div>
-      <div class="box">
-        Volume
+      <div class="volume">
+        <i class="fas fa-list-ul fa-sm"></i>
+        <i class="fas fa-desktop fa-sm"></i>
+        <i class="fas fa-volume-down fa-sm"></i>
+        <div class="scrollbar-volume list-inline">
+
+        </div>
       </div>
     </footer>
   </div>
