@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>html-css-spotifyweb</title>
+  <link rel="icon" href="./img/favicon.png">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
   <link rel="stylesheet" href="./css/style.css">
@@ -22,7 +23,7 @@
         <div class="sidebar-top">
           <div class="logo">
             <a href="">
-              <img src="./img/logo.svg" alt="Spotify Logo">
+              <img class="hidden-mobile" src="./img/logo.svg" alt="Spotify Logo">
             </a>
           </div>
           <nav class="navbar-list">
@@ -47,10 +48,10 @@
               </li>
             </ul>
           </nav>
-          <div class="playlists">
-            <h4>Playlist</h4>
+          <div class="playlists hidden-mobile">
+            <h4 class="text-uppercase">Playlist</h4>
             <a href="">
-              <i class="fas fa-plus"></i>
+              <i class="fas fa-plus fa-md"></i>
               <span>Crea Playlist</span>
             </a>
             <ul>
@@ -80,7 +81,7 @@
         </div>
         <div class="sidebar-bottom">
           <div class="install">
-            <i class="fas fa-arrow-down fa-sm"></i>
+            <i class="fas fa-arrow-down fa-xs"></i>
             <span>Installa app</span>
           </div>
           <div class="profile">
@@ -93,11 +94,13 @@
       <!-- Content -->
       <div class="content">
         <div class="content-top-bar text-right">
+          <div class="upgrade">
             <a href="" class="btn">Effettua l'upgrade</a>
+          </div>
         </div>
         <div class="scrollable">
           <div class="menu-bar">
-              <ul class="menu">
+              <ul class="menu text-uppercase">
                 <li>
                   <a href="">In Evidenza</a>
                 </li>
@@ -119,35 +122,65 @@
               </ul>
           </div>
           <section class="recently-played">
-            <h2>Recently played</h2>
+            <h2 id="first-category"></h2>
             <ul class="recently-played">
-              <li class="cover">
-                <img src="./img/metal_lifting.jpg" alt="Heavy Metal">
+              <li>
+                <div class="cover">
+                  <img src="./img/metal_lifting.jpg" alt="Heavy Metal">
+                  <div class="overlay">
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
                 <h3>Heavy Metal</h3>
                 <span>Subtitle</span>
               </li>
-              <li class="cover">
-                <img src="./img/stranger.jpeg" alt="Stranger Things">
+              <li>
+                <div class="cover">
+                  <img src="./img/stranger.jpeg" alt="Heavy Metal">
+                  <div class="overlay">
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
                 <h3>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
                 <span>Kyle Dixon & Michael Stein</span>
               </li>
-              <li class="cover">
-                <img src="./img/aquietplace.jpeg" alt="A Quiet Place">
+              <li>
+                <div class="cover">
+                  <img src="./img/aquietplace.jpeg" alt="A Quiet Place">
+                  <div class="overlay">
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
                 <h3>A quiet place</h3>
                 <span>Subtitle</span>
               </li>
-              <li class="cover">
-                <img src="./img/split.jpeg" alt="Split">
+              <li>
+                <div class="cover">
+                  <img src="./img/split.jpeg" alt="Split">
+                  <div class="overlay">
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
                 <h3>Split</h3>
                 <span>Subtitle</span>
               </li>
-              <li class="cover">
-                <img src="./img/cure.jpeg" alt="A cure for wellnes">
+              <li>
+                <div class="cover">
+                  <img src="./img/cure.jpeg" alt="A cure for wellnes">
+                  <div class="overlay">
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
                 <h3>A cure for wellness</h3>
                 <span>Subtitle</span>
               </li>
-              <li class="cover">
-                <img src="./img/sinister.jpeg" alt="Sinister">
+              <li>
+                <div class="cover">
+                  <img src="./img/sinister.jpeg" alt="Sinister">
+                  <div class="overlay">
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
                 <h3>Sinister</h3>
                 <span>Subtitle</span>
               </li>
@@ -157,12 +190,22 @@
             <h2>Creato per John Doe</h2>
             <span>Più ascolti, più accurati saranno i suggerimenti</span>
             <ul class="john-doe">
-              <li class="cover">
-                <img src="./img/radar.jpeg" alt="Release Radar">
+              <li>
+                <div class="cover">
+                  <img src="./img/radar.jpeg" alt="Release Radar">
+                  <div class="overlay">
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
                 <h3>Release Radar</h3>
               </li>
-              <li class="cover">
-                <img src="./img/mixdaily.jpeg" alt="Daily Mix 1">
+              <li>
+                <div class="cover">
+                  <img src="./img/mixdaily.jpeg" alt="Daily Mix 1">
+                  <div class="overlay">
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
                 <h3>Daily Mix 1</h3>
               </li>
             </ul>
@@ -170,12 +213,22 @@
           <section class="popular-artists">
             <h2>Artisti più popolari</h2>
             <ul class="artists-list">
-              <li class="cover">
-                <img src="./img/young.jpeg" alt="Lana del Ray">
+              <li>
+                <div class="cover">
+                  <img src="./img/young.jpeg" alt="Lana del Ray">
+                  <div class="overlay">
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
                 <h3>Lana del Ray</h3>
               </li>
-              <li class="cover">
-                <img src="./img/einaudi.jpeg" alt="Ludovico Einaudi">
+              <li>
+                <div class="cover">
+                  <img src="./img/einaudi.jpeg" alt="Ludovico Einaudi">
+                  <div class="overlay">
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
                 <h3>Ludovico Einaudi</h3>
               </li>
             </ul>
@@ -188,36 +241,51 @@
     <footer class="player">
       <div class="song">
         <img src="./img/sinister.jpeg" alt="Sinister">
-        <h5 class="list-inline">Sinister</h5>
-        <span>Brano Nome</span>
-        <i class="far fa-heart fa-sm"></i>
-        <i class="far fa-folder fa-sm"></i>
+        <div class="title">
+          <h5>Sinister</h5>
+          <span>Brano Nome</span>
+        </div>
+        <a href="">
+          <i class="far fa-heart fa-sm"></i>
+        </a>
+        <a href="">
+          <i class="far fa-folder fa-sm"></i>
+        </a>
       </div>
-      <div class="controls text-center">
-        <div class="controls-top">
+      <div class="controls">
+        <div class="controls-top text-center">
           <i class="fas fa-random"></i>
           <i class="fas fa-step-backward"></i>
-          <i class="fas fa-play fa-lg"></i>
+          <i class="far fa-play-circle"></i>
           <i class="fas fa-step-forward"></i>
           <i class="fas fa-redo-alt"></i>
         </div>
         <div class="controls-bottom">
           <span>0:25</span>
-          <div class="scrolbar-song list-inline">
+          <div class="scrollbar-song">
 
           </div>
           <span>4:35</span>
         </div>
       </div>
       <div class="volume">
-        <i class="fas fa-list-ul fa-sm"></i>
-        <i class="fas fa-desktop fa-sm"></i>
-        <i class="fas fa-volume-down fa-sm"></i>
+        <a href="">
+          <i class="fas fa-list-ul fa-sm"></i>
+        </a>
+        <a href="">
+          <i class="fas fa-desktop fa-sm"></i>
+        </a>
+        <a href="">
+          <i class="fas fa-volume-down fa-sm"></i>
+        </a>
         <div class="scrollbar-volume list-inline">
 
         </div>
       </div>
     </footer>
   </div>
+
+  <!-- JAVASCRIPT -->
+  <script src="./js/main.js"></script>
 </body>
 </html>
